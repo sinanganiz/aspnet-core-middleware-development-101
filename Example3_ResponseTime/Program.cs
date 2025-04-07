@@ -1,11 +1,15 @@
+using System.Diagnostics;
+
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
+// Using the ResponseTimeMiddleware
 app.UseMiddleware<ResponseTimeMiddleware>();
 
 app.MapGet("/", () => "Hello World!");
 app.Run();
 
+// ResponseTimeMiddleware codes written as a class
 public class ResponseTimeMiddleware
 {
     private readonly RequestDelegate _next;
