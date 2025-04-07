@@ -15,3 +15,14 @@ This repository contains **4 minimal and practical examples** of custom middlewa
     └── README.md
 
 Each folder contains an independent ASP.NET Core project demonstrating a specific middleware concept.
+
+## 🚀 How to Run
+
+You can run any example individually:
+
+    cd Example1_RequestLogging
+    dotnet run
+
+## 📌 Requirements
+
+.NET 9 SDK
